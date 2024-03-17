@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --color-background: #eeeeee;
+    --color-itt-20:    	#dfd8d2;
+    --color-itt-30:      #cec5c5;
+    --color-itt-40:      #3c271f;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    width: 80px;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 30px;
+}
+
+.text-area {
+    width: 680px;
+    height: 550px;
+    border: none;
+    margin: 0px;
+    font-size: 32px;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+textarea, textarea::placeholder {
+    font-size: 32px;
+    color: var(--color-itt-30);
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.information {
+    font-size: 8px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    margin-bottom: 5px;
+    color: var(--color-itt-40);
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+}
+
+.btn-criptografar:hover{
+    background-color: #cec5c5;
+}
+
+.btn-criptografar{
+    width: 200px;
+    height: 64px;
+    border: 2px solid;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    padding: 22px 0;
+    background-color: var(--color-itt-40);
+    color: var(--color-background);
+    cursor: pointer;
+}
+
+.btn-descriptografar:hover{
+    background-color: #cec5c5;
+}
+
+.btn-descriptografar{
+    width: 200px;
+    height: 64px;
+    border: 2px solid;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    padding: 22px 0;
+    background-color: var(--color-itt-40);
+    color: var(--color-background);
+    cursor: pointer;
+}
+
+.btn-copiar:hover {
+    background-color: #cec5c5;
+}
+
+.btn-copiar {    
+    width: 200px;
+    height: 64px;
+    border: 2px solid;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 22px 0;
+    background-color: var(--color-itt-40);
+    color: var(--color-background);
+    cursor: pointer;
+}
+
+.text-area-secondary {
+    width: 100%;
+    height: 171px;
+    border: none;
+    margin: 0px;
+    font-size: 32px;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.text-area-secondary, .text-area-secondary::placeholder {
+    font-size: 32px;
+    color: var(--color-itt-20);
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.box__secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.msgNotFound {
+    font-size: 24px;
+    padding: 5px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-itt-40);
+}
+
+.msgTypeText {
+    font-size: 16px;
+    padding: 5px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-itt-30);
+}
+
+
+.rodape-text {
+    color: var(--color-itt-20);
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: 600;
+    background-color: var(--color-itt-40);
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    position: fixed;
+    text-decoration: none;
+}
+
+
+@media all and (min-width: 850px) and (max-width: 1024px) {
+    .box {
+        gap: 25px;
+    }
+
+    .text-area {
+        width: 580px;
+        height: 450px;
+    }
+}
+
+@media all and (min-width: 720px) and (max-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagemBusca {
+        display: none;
+    }
+
+    .text-area-secondary {
+        height: 80px;
+    }
+
+    .btn-criptografar, .btn-descriptografar {
+        width: 300px;
+    }
+
+    .btn-copiar {
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 200px) and (max-width: 425px) {
+    
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .text-area {
+        height: 400px;
+    }
+
+    .text-area-secondary {
+        height: 200px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-criptografar, .btn-descriptografar {
+        width: 100%;
+    }
+
+    .btn-copiar {
+        width: 80%;
+    }
+
+    .rodape-text {
+        position: relative;
+    }
+}

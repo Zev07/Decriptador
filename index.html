@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Decriptador</title>
+    <link rel="icon" href="images/logo.png" type="images">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Logo">
+    </header>
+
+    <main>
+        <section class="box">
+
+            <div class="box__primary">
+                <textarea class="text-area" placeholder="Digite seu texto"></textarea>
+
+                <div class="information">
+                    <h1><i style="font: size 16px;" class="fa">&#xf05a;</i> Apenas letras minúsculas e sem acento.</h1>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn-criptografar" onclick="criptografarTexto()" >Criptografar</button>
+                    <button class="btn-descriptografar" onclick="descriptografarTexto()" >Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="box__secondary">
+                <textarea id="texto-mensagem" class="text-area-secondary" placeholder=""></textarea>
+                <h1 id="msgNotFound" class="msgNotFound">Nenhuma mensagem encontrada</h1>
+                <img id="imagemBusca" src="images/wait1.png" alt="Uma pessoa olhando por uma lupa.">
+                <p id="msgTypeText" class="msgTypeText">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            
+                <button id="btn-copiar" class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+         <a  href ="https://github.com/Zev07" class="rodape-text">Desenvolvido por Zev</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
